@@ -12,6 +12,7 @@ void write_page(uint32_t address, uint8_t *data); // write one page of data into
 uint8_t read_byte(uint32_t address); // read one byte of data from the address specified 
 int read_page(uint32_t address, uint8_t *data); // read one page of data from the address specified 
 void eeprom_chip_erase(void); //erase the entire chip
+void send_address(uint32_t address); //Write address in SPI Serial BUS as bytes
 
 
 void low_cs();
